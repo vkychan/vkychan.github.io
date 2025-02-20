@@ -199,6 +199,7 @@
         cursor: pointer;
         margin-top: 10px;
         font-weight: 400;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);;
       }
 
       .contact-button:hover {
@@ -214,7 +215,7 @@
   <body>
     <nav>
       <a href="#skills">Home</a>
-      <a href="#about">About Me</a>
+      <!-- <a href="#about">About Me</a> -->
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <!-- <a href="#portfolio">Portfolio</a> -->
@@ -321,11 +322,19 @@
           Let's collaborate to optimize your technological landscape and drive
           your business toward success.
         </p>
+
+        <a
+            href="doc/CV.pdf"
+            style="text-decoration: none"
+            download
+          >
+            <button class="contact-button">Get My Resume</button>
+          </a>
       </section>
 
       <section id="experience">
         <h2>Work Experience</h2>
-        <div class="description-container">
+        <div style="margin-bottom: 3rem;">
           <div class="image">
             <img src="image/hkma.jpg" style="width: 25rem;" />
           </div>
@@ -359,7 +368,7 @@
 
       <section class="section" id="education">
         <h2>Education</h2>
-        <div class="description-container">
+        <div style="margin-bottom: 3rem;">
           <div class="image">
             <img src="image/sdsc.jpg" style="width: 15rem;"/>
           </div>
