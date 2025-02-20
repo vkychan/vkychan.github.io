@@ -1,1 +1,420 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent Chan - Personal Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        background: #21252a;
+        color: #fff;
+        padding: 1.5rem 1rem;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+      }
+
+      header h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* margin-bottom: 0.5rem; */
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      nav {
+        background: #21252a;
+        padding: 1rem;
+        text-align: right;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        /* text-decoration: underline; */
+        background-color: rgba(133, 133, 133, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        background: #f4f4f4;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-left: 5px solid #007bff;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .contact-info {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .contact-info img {
+        width: 100px;
+        height: 100px;
+        /* border-radius: 50%; */
+        object-fit: cover;
+        /* border: 2px solid #007BFF; */
+      }
+
+      .contact-info div {
+        flex: 1;
+      }
+
+      .skill-category {
+        margin-bottom: 1rem;
+      }
+
+      .skill-category h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #007bff;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .skill-list span {
+        background: #007bff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-icon {
+      font-size: 30px;
+      color: #e91e63;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #b3b3b3;
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#about">About Me</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <!-- <a href="#portfolio">Portfolio</a> -->
+      <a href="#technicalSkill">Technical Skills</a>
+      <a href="#certification">Certification</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+      <div style="width: 45%">
+        <h1>
+          Hi, I'm <span style="color: rgb(251, 4, 81)">Vincent Chan</span>
+        </h1>
+        <h2>an IT Business Analyst.</h2>
+        <div>
+          <p>
+            Passion for harmonizing technology with business needs. With a knack
+            for dissecting complex systems and requirements, I specialize in
+            crafting strategic IT solutions that propel organizations towards
+            success.
+          </p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <img src="your-profile-picture.jpg" />
+      </div>
+    </header>
+
+    <div class="container">
+
+      <section id="skills">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-icon">☰</div>
+            <div class="card-title">Business Analysis & Strategy</div>
+            <div class="card-description">
+              I throw myself down among the tall grass by the stream as I lie close to the earth.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📖</div>
+            <div class="card-title">Project Planning</div>
+            <div class="card-description">
+              It uses a dictionary of over 200 Latin words, combined with a handful of model sentences.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📺</div>
+            <div class="card-title">
+              Software Development</div>
+            <div class="card-description">
+              I throw myself down among the tall grass by the stream as I lie close to the earth.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Vincent, Chan Kai Yin, an IT Business Analyst
+          devoted to bridging the divide between technical solutions and
+          operational requirements. Armed with a Bachelor's degree in Data and
+          System Engineering from City University of Hong Kong, I am a dedicated
+          professional with a robust background in data engineering and software
+          development. From my tenure at the Hong Kong Monetary Authority to my
+          international exposure in project management, I am resolute in pushing
+          boundaries and crafting impactful solutions in the ever-evolving realm
+          of technology. Proficient in translating intricate technical concepts
+          into strategic business resolutions, my strengths encompass project
+          planning, system testing, and implementation, fostering innovation and
+          efficiency in IT operations. Let's collaborate to optimize your
+          technological landscape and drive your business toward success.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="section">
+          <ul>
+            <li>
+              Analyst Programmer, Hong Kong Monetary Authority (Jul 2024 - Dec
+              2024)
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <ul>
+            <li>
+              Software Engineer Intern, Solos Technology Limited (Aug 2023 - Jun
+              2024)
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <ul>
+            <li>
+              Project Coordinator Intern, InfinityLab R&D (Mar 2022 - Aug 2022)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div>
+          <div class="image">
+            <img src="image.jpg"/>
+          </div>
+          <div class="description">
+            <ul>
+              <li>
+                City University of Hong Kong 2020 - PRESENT - Bachelor of
+                Engineering in Data and System Engineering
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- 
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Here are some of my recent works:</p>
+      <ul>
+        <li><strong>Project 1:</strong> <a href="#link1">[Project Name]</a> - A brief description of the project.</li>
+        <li><strong>Project 2:</strong> <a href="#link2">[Project Name]</a> - A brief description of the project.</li>
+        <li><strong>Project 3:</strong> <a href="#link3">[Project Name]</a> - A brief description of the project.</li>
+      </ul>
+    </section> 
+    -->
+
+      <section class="section" id="certification">
+        <h2>Certification</h2>
+        <ul>
+          <li>ITIL® 4 Foundation - IT Service Management</li>
+        </ul>
+      </section>
+
+      <section class="section" id="technicalSkill">
+        <h2>Technical Skills</h2>
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>Java</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development/Framework</h3>
+          <div class="skill-list">
+            <span>Angular</span>
+            <span>React.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Development Tools</h3>
+          <div class="skill-list">
+            <span>Git</span>
+            <span>Docker</span>
+            <span>RESTful APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database</h3>
+          <div class="skill-list">
+            <span>MySQL</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud Compute Service</h3>
+          <div class="skill-list">
+            <span>AWS</span>
+            <span>Google Cloud Platform</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Project Management Tools</h3>
+          <div class="skill-list">
+            <span>Jira/Confluence</span>
+            <span>Azure DevOps</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <p>
+          Email:
+          <a href="mailto:vincent.chan0409@gmail.com"
+            >vincent.chan0409@gmail.com</a
+          >
+        </p>
+        <p>Phone: +852 9705 8419</p>
+        <p>
+          LinkedIn:
+          <a href="www.linkedin.com/in/vincent-chan-405565282" target="_blank"
+            >Vincent Chan</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Vincent Chan. All rights reserved. |
+        <a href="#top">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
