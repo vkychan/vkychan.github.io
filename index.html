@@ -14,7 +14,8 @@
 
       body {
         line-height: 1.6;
-        color: #333;
+        color: white;
+        background-color: #292e34;
       }
 
       header {
@@ -68,7 +69,7 @@
       }
 
       section {
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
       }
 
       h2 {
@@ -86,14 +87,10 @@
       }
 
       ul li {
-        background: #f4f4f4;
-        margin-bottom: 0.5rem;
+        /* background: #f4f4f4; */
+        margin-bottom: 1rem;
         padding: 0.5rem;
-        border-left: 5px solid #007bff;
-      }
-
-      .section {
-        margin-bottom: 2rem;
+        border-left: 10px solid #e91e63;
       }
 
       .contact-info {
@@ -120,9 +117,9 @@
       }
 
       .skill-category h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
-        color: #007bff;
+        color: #ffffff;
       }
 
       .skill-list {
@@ -132,7 +129,7 @@
       }
 
       .skill-list span {
-        background: #007bff;
+        background: #e91e63;
         color: #fff;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -148,54 +145,70 @@
       }
 
       footer a {
-        color: #007bff;
+        color: #e91e63;
         text-decoration: none;
       }
 
       .card-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-    .card {
-      background-color: #1f1f1f;
-      border-radius: 10px;
-      width: 300px;
-      padding: 20px;
-      text-align: left;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+      .card {
+        background-color: #1f1f1f;
+        border-radius: 10px;
+        width: 300px;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+      }
 
-    .card-icon {
-      font-size: 30px;
-      color: #e91e63;
-      margin-bottom: 15px;
-    }
+      .card-icon {
+        font-size: 30px;
+        color: #e91e63;
+        margin-bottom: 15px;
+      }
 
-    .card-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+      }
 
-    .card-description {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #b3b3b3;
-    }
+      .card-description {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #b3b3b3;
+      }
+
+      .contact-button {
+        padding: 10px 20px;
+        background-color: rgb(251, 4, 81, 0.8);
+        color: white;
+        border: 2px solid rgb(161, 37, 75, 0.2);
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+
+      .contact-button:hover {
+        box-shadow: 1px 1px 4px rgba(251, 4, 81, 0.7);
+      }
     </style>
   </head>
   <body>
     <nav>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Home</a>
       <a href="#about">About Me</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
@@ -218,6 +231,12 @@
             crafting strategic IT solutions that propel organizations towards
             success.
           </p>
+          <a
+            href="mailto:vincent.chan0409@gmail.com"
+            style="text-decoration: none"
+          >
+            <button class="contact-button">Contact Me</button>
+          </a>
         </div>
       </div>
       <div class="contact-info">
@@ -226,78 +245,109 @@
     </header>
 
     <div class="container">
-
       <section id="skills">
         <div class="card-container">
           <div class="card">
             <div class="card-icon">☰</div>
             <div class="card-title">Business Analysis & Strategy</div>
             <div class="card-description">
-              I throw myself down among the tall grass by the stream as I lie close to the earth.
+              Analyzing business processes and requirements to recommend
+              solutions.
             </div>
           </div>
           <div class="card">
             <div class="card-icon">📖</div>
             <div class="card-title">Project Planning</div>
             <div class="card-description">
-              It uses a dictionary of over 200 Latin words, combined with a handful of model sentences.
+              Ensuring successful project completion through effective project
+              management.
             </div>
           </div>
           <div class="card">
             <div class="card-icon">📺</div>
-            <div class="card-title">
-              Software Development</div>
+            <div class="card-title">Software Development</div>
             <div class="card-description">
-              I throw myself down among the tall grass by the stream as I lie close to the earth.
+              2+ years of solid development experience with various projects.
+            </div>
+          </div>
+        </div>
+        <div class="card-container" style="margin-top: 4rem">
+          <div class="card">
+            <div class="card-icon">☰</div>
+            <div class="card-title">Quality Assurance</div>
+            <div class="card-description">
+              Ensuring project meets high standards through rigorous testing and
+              evaluation.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📖</div>
+            <div class="card-title">Data Analysis</div>
+            <div class="card-description">
+              Uncovering insights and making informed decisions from data.
             </div>
           </div>
         </div>
       </section>
-
 
       <section id="about">
         <h2>About Me</h2>
         <p>
           Hello! My name is Vincent, Chan Kai Yin, an IT Business Analyst
           devoted to bridging the divide between technical solutions and
-          operational requirements. Armed with a Bachelor's degree in Data and
-          System Engineering from City University of Hong Kong, I am a dedicated
-          professional with a robust background in data engineering and software
-          development. From my tenure at the Hong Kong Monetary Authority to my
-          international exposure in project management, I am resolute in pushing
-          boundaries and crafting impactful solutions in the ever-evolving realm
-          of technology. Proficient in translating intricate technical concepts
-          into strategic business resolutions, my strengths encompass project
-          planning, system testing, and implementation, fostering innovation and
-          efficiency in IT operations. Let's collaborate to optimize your
-          technological landscape and drive your business toward success.
+          operational requirements.
+        </p>
+        <p>
+          Armed with a Bachelor's degree in Data and System Engineering from
+          City University of Hong Kong, I am a dedicated professional with a
+          robust background in data engineering and software development. From
+          my tenure at the Hong Kong Monetary Authority to my international
+          exposure in project management, I am resolute in pushing boundaries
+          and crafting impactful solutions in the ever-evolving realm of
+          technology.
+        </p>
+        <p>
+          Proficient in translating intricate technical concepts into strategic
+          business resolutions, my strengths encompass project planning, system
+          testing, and implementation, fostering innovation and efficiency in IT
+          operations.
+        </p>
+        <p>
+          Let's collaborate to optimize your technological landscape and drive
+          your business toward success.
         </p>
       </section>
 
       <section id="experience">
         <h2>Work Experience</h2>
-        <div class="section">
-          <ul>
-            <li>
-              Analyst Programmer, Hong Kong Monetary Authority (Jul 2024 - Dec
-              2024)
-            </li>
-          </ul>
+        <div>
+          <div class="image">
+            <img src="image/hkma.png" />
+          </div>
+          <div class="description">
+            <ul>
+              <li>Analyst Programmer, Hong Kong Monetary Authority</li>
+            </ul>
+          </div>
         </div>
-        <div class="section">
-          <ul>
-            <li>
-              Software Engineer Intern, Solos Technology Limited (Aug 2023 - Jun
-              2024)
-            </li>
-          </ul>
-        </div>
-        <div class="section">
-          <ul>
-            <li>
-              Project Coordinator Intern, InfinityLab R&D (Mar 2022 - Aug 2022)
-            </li>
-          </ul>
+        <div>
+          <div class="image">
+            <img src="image/solos.jpeg" />
+          </div>
+          <div class="description">
+            <ul>
+              <li>Software Engineer Intern, Solos Technology Limited</li>
+            </ul>
+          </div>
+        </div> <div>
+          <div class="image">
+            <img src="image/infinity.jpeg" />
+          </div>
+          <div class="description">
+            <ul>
+              <li>Project Coordinator Intern, InfinityLab R&D</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -305,20 +355,27 @@
         <h2>Education</h2>
         <div>
           <div class="image">
-            <img src="image.jpg"/>
+            <img src="image/sdsc.jpg" />
           </div>
           <div class="description">
             <ul>
-              <li>
-                City University of Hong Kong 2020 - PRESENT - Bachelor of
-                Engineering in Data and System Engineering
-              </li>
+              <li>Data & System Engineering, City University of Hong Kong</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="image">
+            <img src="image/sgh.png" />
+          </div>
+          <div class="description">
+            <ul>
+              <li>Student Exchange Program, SGH Warsaw School of Economics, Poland</li>
+              <!-- <li>Student Exchange Program in International Project Management & Risk Management</li> -->
             </ul>
           </div>
         </div>
       </section>
-
-      
 
       <!-- 
     <section id="portfolio">
@@ -334,9 +391,16 @@
 
       <section class="section" id="certification">
         <h2>Certification</h2>
-        <ul>
-          <li>ITIL® 4 Foundation - IT Service Management</li>
-        </ul>
+        <div>
+          <div class="image">
+            <img src="image/itil.png" />
+          </div>
+          <div class="description">
+            <ul>
+              <li>ITIL® 4 Foundation - IT Service Management</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="technicalSkill">
@@ -396,14 +460,17 @@
         <p>If you'd like to get in touch, feel free to reach out!</p>
         <p>
           Email:
-          <a href="mailto:vincent.chan0409@gmail.com"
+          <a style="color: #e91e63" href="mailto:vincent.chan0409@gmail.com"
             >vincent.chan0409@gmail.com</a
           >
         </p>
         <p>Phone: +852 9705 8419</p>
         <p>
           LinkedIn:
-          <a href="www.linkedin.com/in/vincent-chan-405565282" target="_blank"
+          <a
+            style="color: #e91e63"
+            href="www.linkedin.com/in/vincent-chan-405565282"
+            target="_blank"
             >Vincent Chan</a
           >
         </p>
@@ -411,10 +478,10 @@
     </div>
 
     <footer>
-      <p>
+      <div>
         &copy; 2025 Vincent Chan. All rights reserved. |
         <a href="#top">Back to Top</a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>
